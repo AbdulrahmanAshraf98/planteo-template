@@ -333,6 +333,68 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 
 
 /* -------header end---------------- */
+/* -------Works section start---------------- */
+.Works{
+    padding:2rem;
+    background-color: var(--white);
+    
+}
+.Works .card{
+    padding: 2rem 0;
+    background: var(--white);
+    align-items: center;
+    text-align: center;
+    border:0;
+    border-radius: 10px;
+    padding: 35px 22px 45px 22px;
+    box-shadow: 0px 0px 150px 0px #EEEEEE;
+    transition:all 0.4s ease-in;
+    -webkit-transition:all 0.4s ease-in;
+    -moz-transition:all 0.4s ease-in;
+    -ms-transition:all 0.4s ease-in;
+    -o-transition:all 0.4s ease-in;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom:20px;
+}
+.Works .card:hover{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    transform: translateY(-16px);
+    -webkit-transform: translateY(-16px);
+    -moz-transform: translateY(-16px);
+    -ms-transform: translateY(-16px);
+    -o-transform: translateY(-16px);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.Works .card .card-img-top{
+    max-width: 170px;
+}
+.Works .card .card-body{
+    transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+    -ms-transition:all 0.4s ease;
+    -o-transition:all 0.4s ease;
+}
+.Works .card:hover .card-body{
+    color: var(--white)
+}
+.Works .card .card-title{
+    font-weight: 700;
+    font-size:18px;
+}
+.Works .card .card-text{
+    font-weight: 600;
+    line-height:1.6;
+}
+/* -------header end---------------- */
 /* -------media start---------------- */
 
 @media (max-width:1120px){
@@ -346,7 +408,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     }
     /* -------navbar end---------------- */
 }
-@media (max-width:991px){
+@media (max-width:991px) {
     /* -------navbar start---------------- */
     .navbar{
         padding:1rem;   
@@ -551,10 +613,12 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     .navbar .navbar-toggler i {
         font-size: 2rem;
     }
+   
     
     /* -------navbar end---------------- */
 }
-@media (max-width:575px){
+
+@media (max-width:576px){
     /* -------navbar start---------------- */
     
     .navbar-collapse{
@@ -568,7 +632,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         order: 2;
         text-align: center;
       }
-      header .container>.row .col-lg-5 .content>h3 {
+    header .container>.row .col-lg-5 .content>h3 {
         font-size: 1.2rem;
         font-weight: 600;
     }
@@ -578,7 +642,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
        header .container .row .col-lg-6{
         order: 1;
         margin-bottom:1.5rem;
-      }
+    }
 
     header .container>.row .col-lg-6 .img-box {
         position: relative;
@@ -636,6 +700,86 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         width: 65px;
     }
 }
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    header {
+        padding: 1rem 0;
+    }
+    header .container .row .col-lg-5{
+        order: 2;
+        text-align: center;
+      }
+      header .container>.row .col-lg-5 .content>h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    header .container>.row .col-lg-5 .content>h1 {
+        font-size: 1.5rem;
+    }
+       header .container .row .col-lg-6{
+        order: 1;
+        margin-bottom:1.5rem;
+    }
+
+    header .container>.row .col-lg-6 .img-box {
+        position: relative;
+        width: 100%;
+        
+    }
+    header .container>.row .col-lg-6 .img-box::before {
+        bottom: 2%;
+        left: 40%;
+        width: 100vw;
+        height: 100vh;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+        background-size: 120px;
+        animation: girl-img-animation 2s linear infinite alternate;
+    }
+    @keyframes girl-img-animation {
+    0%{
+        bottom: -22%;
+    }
+    100%{
+        bottom: -18%;
+
+    }   
+    }
+      header .container>.row .col-lg-6 .img-box>.main-img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        transform:unset;
+        -webkit-transform:unset;
+        -moz-transform:unset;
+        -ms-transform:unset;
+        -o-transform:unset;
+    }
+    header .container>.row .col-lg-6 .img-box>.plant-img-1 {
+        width: 45px;
+        top: 5px;
+        left: 82px;
+    }
+    header .container>.row .col-lg-6 .img-box>.plant-img-2 {
+        width: 80px;
+        position: absolute;
+        top: 0px;
+        left: 136px;
+    }
+    header .container>.row .col-lg-6 .img-box>.stand-img {
+        width: 116px;
+        position: absolute;
+        top: 81px;
+        left: 82px;
+    }
+    header .container>.row .col-lg-6 .img-box>.plant-img-3 {
+        right: 10%;
+        top: -1px;
+        width: 120px;
+    }
+    }
 @media (max-width:320px)
 { 
     header .container .row .col-lg-6 {
