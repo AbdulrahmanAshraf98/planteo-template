@@ -253,30 +253,32 @@ header .container>.row .col-lg-6 .img-box{
 header .container>.row .col-lg-6 .img-box::before{
     content: "";
     position: absolute;
-    bottom: 27%;
-    left: 40%;
-    width: 101px;
-    height: 200px;
+    bottom:0;
+    left: 30%;
+    width: 39%;
+    height: 85%;
     background: url("../img/sl_5.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    transform:scale(2.2) ;
-    -webkit-transform:scale(2.2) ;
-    -moz-transform:scale(2.2) ;
-    -ms-transform:scale(2.2) ;
-    -o-transform:scale(2.2) ;
     z-index: 333;
     animation: girl-img-animation 2s linear infinite alternate;
     -webkit-animation: girl-img-animation 2s linear infinite alternate;
 }
 @keyframes girl-img-animation {
     0%{
-        bottom: 27%;
-    }
+        transform:translateY(2%);
+        -webkit-transform:translateY(2%);
+        -moz-transform:translateY(2%);
+        -ms-transform:translateY(2%);
+        -o-transform:translateY(2%);
+}
     100%{
-        bottom: 30%;
-
-    }   
+        transform:translateY(7%);
+        -webkit-transform:translateY(7%);
+        -moz-transform:translateY(7%);
+        -ms-transform:translateY(7%);
+        -o-transform:translateY(7%);
+}   
 }
 header .container>.row .col-lg-6 .img-box>.main-img{
     width: 100%;
@@ -553,23 +555,11 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         
     }
     header .container>.row .col-lg-6 .img-box::before{
-        bottom: 10%;
+        
         left: 31%;
-        transform:scale(1.2)    ;
-        -webkit-transform:scale(1.2)    ;
-        -moz-transform:scale(1.2)    ;
-        -ms-transform:scale(1.2)    ;
-        -o-transform:scale(1.2)    ;
+      
 }
-@keyframes girl-img-animation {
-    0%{
-        bottom: 10%;
-    }
-    100%{
-        bottom: 15%;
 
-    }   
-}
     header .container>.row .col-lg-6 .img-box>.main-img
     {
         transform: scale(1.5)    ;
@@ -650,24 +640,12 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         margin: 0 auto;
     }
     header .container>.row .col-lg-6 .img-box::before {
-        bottom: 2%;
-        left: 36%;
-        transform: unset;
-        -webkit-transform: unset;
-        -moz-transform: unset;
-        -ms-transform: unset;
-        -o-transform: unset;
-        background-size: 80px;
+        bottom: 0;
+        left: 35%;
+        width: 30%;
+        height: 80%;   
     }
-    @keyframes girl-img-animation {
-    0%{
-        bottom: 2%;
-    }
-    100%{
-        bottom: 5%;
-
-    }   
-    }
+   
       header .container>.row .col-lg-6 .img-box>.main-img {
         width: 100%;
         object-fit: cover;
@@ -726,27 +704,12 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         
     }
     header .container>.row .col-lg-6 .img-box::before {
-        bottom: 2%;
-        left: 40%;
-        width: 100vw;
-        height: 100vh;
-        transform: unset;
-        -webkit-transform: unset;
-        -moz-transform: unset;
-        -ms-transform: unset;
-        -o-transform: unset;
-        background-size: 120px;
-        animation: girl-img-animation 2s linear infinite alternate;
-    }
-    @keyframes girl-img-animation {
-    0%{
-        bottom: -22%;
-    }
-    100%{
-        bottom: -18%;
-
-    }   
-    }
+        bottom: 0;
+        left: 42%;
+        width:20%;
+        height:68%;
+        
+}
       header .container>.row .col-lg-6 .img-box>.main-img {
         width: 100%;
         height: 100vh;
@@ -786,18 +749,11 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         margin-bottom: 0.5rem;
     }
     header .container>.row .col-lg-6 .img-box::before {
-        bottom: -20%;
-        left: 41%;
-        background-size: 54px;
+        left: 35%;
+        width: 30%;
+        height: 80%;
     }
-    @keyframes girl-img-animation {
-        0%{
-            bottom: -20%;
-        }
-        100%{
-            bottom: -18%;
-    
-        }  }
+ 
 
     header .container>.row .col-lg-6 .img-box>.plant-img-1 {
         width: 30px;
