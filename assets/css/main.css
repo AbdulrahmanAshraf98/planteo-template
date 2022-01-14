@@ -72,6 +72,23 @@ li{
     padding: 1.2rem 2.5rem;
     background-color: #fff;
     z-index: 999;
+    position: sticky;
+    top:0;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    
+}
+.navbar.scrolled{
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
 }
 .navbar-brand >img{
     max-width: 100%;
@@ -350,11 +367,11 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     border-radius: 10px;
     padding: 35px 22px 45px 22px;
     box-shadow: 0px 0px 150px 0px #EEEEEE;
-    transition:all 0.4s linear;
-    -webkit-transition:all 0.4s linear;
-    -moz-transition:all 0.4s linear;
-    -ms-transition:all 0.4s linear;
-    -o-transition:all 0.4s linear;
+    transition:background 0.4s ease, transform 0.4s linear,border-radius 0.4s ease;
+    -webkit-transition:background 0.4s ease, transform 0.4s linear,border-radius 0.4s ease;
+    -moz-transition:background 0.4s ease, transform 0.4s linear,border-radius 0.4s ease;
+    -ms-transition:background 0.4s ease, transform 0.4s linear,border-radius 0.4s ease;
+    -o-transition:background 0.4s ease, transform 0.4s linear,border-radius 0.4s ease;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -363,27 +380,25 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 }
 .Works .card:hover{
     background-color: var(--primary-color);
-    border-radius: 30px;
+    
     transform: translateY(-16px);
     -webkit-transform: translateY(-16px);
     -moz-transform: translateY(-16px);
     -ms-transform: translateY(-16px);
     -o-transform: translateY(-16px);
+    border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    
 }
 
 .Works .card .card-img-top{
     max-width: 170px;
 }
 .Works .card .card-body{
-    transition:all 0.4s ease;
-    -webkit-transition:all 0.4s ease;
-    -moz-transition:all 0.4s ease;
-    -ms-transition:all 0.4s ease;
-    -o-transition:all 0.4s ease;
+   
 }
 .Works .card:hover .card-body{
     color: var(--white)
@@ -396,7 +411,73 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     font-weight: 600;
     line-height:1.6;
 }
-/* -------header end---------------- */
+/* -------Works end---------------- */
+/* -------About start---------------- */
+.about{
+    background: var(--white);
+    padding: 1rem;
+}
+.about .container-fluid .row{
+    align-items: center;
+    justify-content: space-around;
+}
+.about .container-fluid .row .col-lg-6 .about-img{
+    width: 100%;
+}
+.about .container-fluid .row .col-lg-6 .about-img>img{
+    width: 100%;
+    object-fit: cover;
+}
+.about .container-fluid .row .col-lg-6 .content{
+    width: 100%;
+    
+}
+.about .container-fluid .row .col-lg-6 .content .title {
+    position: relative;
+    margin-bottom:2rem
+}
+.about .container-fluid .row .col-lg-6 .content .title::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10%;
+    height: 3%;
+    background: var(--primary-color);
+
+}
+.about .container-fluid .row .col-lg-6 .content .title>span{
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: var(--primary-color);
+}
+.about .container-fluid .row .col-lg-6 .content .title>h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.about .container-fluid .row .col-lg-6 .content .description>p{
+    font-size: 0.9rem;
+    color:var(--second-color)
+}
+.about .container-fluid .row .col-lg-6 .content .description .row{
+    padding: 0 1rem;
+}
+.about .container-fluid .row .col-lg-6 .content .description .row{
+    align-items: flex-start;
+}
+.about .container-fluid .row .col-lg-6 .content .description .row .col-lg ul{
+    margin: 0;
+}
+.about .container-fluid .row .col-lg-6 .content .description .row .col-lg ul li{
+    padding-bottom: 1rem;
+}
+.about .container-fluid .row .col-lg-6 .content .description .row .col-lg ul li i{
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+/* -------About end---------------- */
 /* -------media start---------------- */
 
 @media (max-width:1120px){
@@ -771,5 +852,9 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         position: absolute;
         top: 78px;
         left: 43px;
+    }
+    .about .container-fluid .row .col-lg-6 .content .title>h2{
+        font-size: 1.3rem;
+        line-height: 1.5;
     }
 }
