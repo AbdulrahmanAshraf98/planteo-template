@@ -12,6 +12,7 @@
 }
 body{
     background-color: #f7f7f7;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -19,6 +20,18 @@ a{
 li{
     list-style-type: none;
 }
+.title-content{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.title-center
+{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .btn-nav{
     background-color:var(--primary-color);
     color:var(--white);
@@ -84,11 +97,7 @@ li{
 .navbar.scrolled{
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+    top:-10px;
 }
 .navbar-brand >img{
     max-width: 100%;
@@ -415,7 +424,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 /* -------About start---------------- */
 .about{
     background: var(--white);
-    padding: 1rem;
+    padding:1rem 1rem 4rem;
 }
 .about .container-fluid .row{
     align-items: center;
@@ -478,7 +487,66 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     color: var(--primary-color);
 }
 /* -------About end---------------- */
+/* -------About end---------------- */
+.contact{
+    padding: 82px 0px 178px 0px;
+    background:url("../img/call-to-action-2.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact .title-content h2{
+    color: var(--white);
+    font-weight:700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+/* -------About end---------------- */
+/* -------counter-up start---------------- */
+.counter-up{
+    margin-top: -8%;    
+}
+.counter-up  #counters_1{
+    background-color: var(--white);
+    border-radius: 30px;
+    box-shadow: 0px 14px 30px 0px rgb(0 0 0 / 7%);
+    padding: 4rem 2rem;
+    text-align: center;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.counter-up  #counters_1 .row .col-lg-3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.counter-up  #counters_1 .row .col-lg-3 span,.counter-up  #counters_1 .row .col-lg-3 .counter
+{
+    font-size: 3.75rem;
+    font-weight:600;
+    color:var(--primary-color);
+}
+.counter-up  #counters_1 .row .col-lg-3 p
+{
+    width:100%;
+    font-size: 1.25rem;
+    font-weight:700;
+    color:var(--second-color);
+}
+
+
+/* -------counter-up end---------------- */
 /* -------media start---------------- */
+
 
 @media (max-width:1120px){
     /* -------navbar start---------------- */
@@ -493,6 +561,9 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 }
 @media (max-width:991px) {
     /* -------navbar start---------------- */
+    .title-content{
+        width: 100%;
+    }
     .navbar{
         padding:1rem;   
     }
@@ -671,9 +742,11 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     top: -42px;
     width: 124px;
     
-}
+    }
 
-
+    .counter-up {
+    margin-top: -12%;
+    }   
 
 }
 @media (max-width:768px){
@@ -690,6 +763,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 }
 
 @media (max-width:576px){
+   
     /* -------navbar start---------------- */
     
     .navbar-collapse{
@@ -757,6 +831,12 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         right:10%;
         top: 31px;
         width: 65px;
+    }
+    .contact .title-content h2{
+        font-size: 1.8rem;
+    }
+    .counter-up{
+        margin-top: -25%;
     }
 }
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
