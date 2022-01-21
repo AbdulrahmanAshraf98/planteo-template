@@ -657,7 +657,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 /* -------service end---------------- */
 /* -------project start---------------- */
 .project{
-    background-color: #eee;
+    background-color: #FAFAFA;
     padding: 7rem 1rem 1rem;
 }
 .project .container-fluid .box{
@@ -665,7 +665,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     padding-bottom: 2rem;
 }
 .project .container-fluid .box .box-img {
-    width: 95%;
+    width: 90%;
     overflow: hidden;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -738,8 +738,39 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 .project .container-fluid .box:hover  .content p a{
    text-decoration: none;
 }
-
-
+.project .container-fluid .owl-nav{
+    display: none;
+}
+.project .container-fluid .owl-dots{
+    padding-top: 1rem;
+    text-align: center;
+}
+.project .container-fluid .owl-dots .owl-dot{
+    width: 20px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-left: 10px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.project .container-fluid .owl-dots .owl-dot.active{
+    width: 40px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
 /* -------project end---------------- */
 
 /* -------media start---------------- */
