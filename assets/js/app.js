@@ -24,9 +24,10 @@ $(document).ready(()=>{
     
     $('.project .owl-carousel').owlCarousel({
         
-        loop:false,
+        loop:true,
         margin:0,
         responsiveClass:true,
+        autoplay:true,
         responsive:{
             0:{
                 items:1,
