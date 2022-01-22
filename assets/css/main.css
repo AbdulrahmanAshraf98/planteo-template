@@ -844,6 +844,8 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     margin: 0 auto 10px ;
     overflow: hidden;
     position: relative;  
+    height: 453px;
+    
 }
 .team .team-item .team-img img{
     width: 100%;
@@ -1224,6 +1226,10 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         justify-content:center;
         padding: 0;
     }
+    .team .team-item{
+        height: 470px;
+        
+    }
      .tastimonials .tastimonials-item{
         width:80%;
        
@@ -1339,7 +1345,9 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     .project .container-fluid .box .content h4{
         font-size: 1rem
     }
-
+    .team .team-item{
+        height: 500px;
+    }
 
 
     .tastimonials .tastimonials-item{
@@ -1446,5 +1454,8 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     .about .container-fluid .row .col-lg-6 .content .title>h2{
         font-size: 1.3rem;
         line-height: 1.5;
+    }
+    .team .team-item{
+        height: 400px;
     }
 }
