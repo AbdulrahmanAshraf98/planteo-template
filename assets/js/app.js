@@ -67,4 +67,19 @@ $(document).ready(()=>{
             }
         }
     });
+    $('.tastimonials .owl-carousel').owlCarousel({
+        
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        autoplay:true,
+        smartSpeed:500,
+        autoplayTimeout:8000,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            }
+        }
+    });
 })
