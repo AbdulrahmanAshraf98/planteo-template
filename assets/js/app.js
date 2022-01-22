@@ -47,10 +47,9 @@ $(document).ready(()=>{
     });
     $('.team .owl-carousel').owlCarousel({
         
-        loop:true,
+        loop:false,
         margin:10,
         responsiveClass:true,
-        autoplay:true,
         responsive:{
             0:{
                 items:1,
