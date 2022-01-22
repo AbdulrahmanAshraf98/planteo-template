@@ -865,7 +865,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 }
 .team .team-item .desc{
     width:100%;
-    height: 100px;
+    /* height: 100px; */
     position: absolute;
     left: 0;
     bottom: 0;
@@ -877,14 +877,14 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     -moz-transition:all .4s  ease;
     -ms-transition:all .4s  ease;
     -o-transition:all .4s  ease;
-    padding: 10px 20px ;
+    padding: 5% 1% 5%  ;
     
 }
 .team .team-item:hover .desc
 {
     box-shadow: 0 0 150px #eee;
     bottom: 40px;
-    height: 140px;
+    padding: 5% 1% 15%  ;
     
 }
 
@@ -1227,7 +1227,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         padding: 0;
     }
     .team .team-item{
-        height: 470px;
+        height: 500px;
         
     }
      .tastimonials .tastimonials-item{
@@ -1345,11 +1345,11 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     .project .container-fluid .box .content h4{
         font-size: 1rem
     }
-    .team .team-item{
-        height: 500px;
+
+    .tastimonials
+    {
+        padding: 2rem 0;
     }
-
-
     .tastimonials .tastimonials-item{
         width:100%;
        
@@ -1455,7 +1455,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         font-size: 1.3rem;
         line-height: 1.5;
     }
-    .team .team-item{
+    /* .team .team-item{
         height: 400px;
-    }
+    } */
 }
