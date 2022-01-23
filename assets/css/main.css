@@ -1003,6 +1003,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 }
 
 /* -------tastimonials end---------------- */
+/* -------blog start---------------- */
 .blog {
     background-color: #FAFAFA;
     padding: 5rem 0;
@@ -1065,6 +1066,53 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 {
     display: none;
 }
+/* -------blog end---------------- */
+/* -------brand start---------------- */
+.brand{
+    padding: 3rem 0;
+}
+.brand .brand-item{
+    width:95%;
+    margin: 0 auto;
+}
+.brand .brand-item .brand-img{
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+}
+.brand .brand-item .brand-img .img-top,.brand .brand-item .brand-img .img-bottom{
+    position: absolute;
+    transition: top .4s  ease-in-out;
+    -webkit-transition: top .4s  ease-in-out;
+    -moz-transition: top .4s  ease-in-out;
+    -ms-transition: top .4s  ease-in-out;
+    -o-transition: top .4s  ease-in-out;
+}
+.brand .brand-item .brand-img .img-top{
+    top: -120px;
+  
+}
+.brand .brand-item .brand-img .img-bottom{
+    position: absolute;
+    top: 0px;
+}
+.brand .brand-item .brand-img:hover .img-top{
+    top: 0px;
+}
+.brand .brand-item .brand-img:hover .img-bottom{
+    top: 120px;
+}
+.brand  .owl-nav{
+    display: none;
+}
+.brand  .owl-dots .owl-dot
+{
+    display: none;
+}
+
+/* -------blog end---------------- */
 /* -------media start---------------- */
 
 
@@ -1415,7 +1463,9 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
         width:100%;
        
     }
-  
+    .brand{
+        padding: 1rem 0;
+    }
     
 }
 /* @media only screen and (max-height: 575.98px) and (orientation: landscape) {
