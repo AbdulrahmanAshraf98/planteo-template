@@ -3,6 +3,9 @@
 :root{
     --primary-color:#009961;
     --second-color:#333;
+    --animate-delay: 1s;
+    --animate-duration: 2s;
+
 }
 *,body{
     margin: 0;

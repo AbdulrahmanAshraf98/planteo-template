@@ -1,6 +1,5 @@
 $(document).ready(()=>{
-    
-
+   
     $(".close-icon").click(()=>{
         $(".navbar-collapse").animate({"right":"-100%"},500);
         $(".navbar-collapse").removeClass("show");
@@ -131,5 +130,6 @@ $(document).ready(()=>{
     $(".btn-scroll-to-up").click(function(){
         $("html").animate({scrollTop:0},1000)
     });
-    $(".lodaingPage").fadeOut(3000);
+    $(".lodaingPage").fadeOut(2000);
+    
 })
