@@ -1,4 +1,6 @@
 $(document).ready(()=>{
+    
+
     $(".close-icon").click(()=>{
         $(".navbar-collapse").animate({"right":"-100%"},500);
         $(".navbar-collapse").removeClass("show");
@@ -9,19 +11,18 @@ $(document).ready(()=>{
     $(".navbar-nav .nav-item .nav-link").click(function(){
         $(this).next().toggleClass("active").parent().siblings().find(".drop-down-menu.active").removeClass("active");
     })
-    // $(window).scroll(()=>{
-    //    const top= $(this).scrollTop(); 
-    //    console.log(top);
-    //    if(top>50)
-    //    {
-    //     $(".navbar").toggleClass("scrolled");
-    //    } 
-    // })
     $(window).scroll(function(){
-        $(".navbar").toggleClass("scrolled" ,$(this).scrollTop() > 50)
+         // navbar
+        $(".navbar").toggleClass("scrolled" ,$(this).scrollTop() > 50);
+        // btn-scroll-to-up
+        $(".btn-scroll-to-up").toggleClass("active" ,$(this).scrollTop() > 50);
       });
 
-    
+    // service .nav-item
+    $(".service .nav-item").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+    ;
     $('.project .owl-carousel').owlCarousel({
         
         loop:true,
@@ -127,4 +128,8 @@ $(document).ready(()=>{
             }
         }
     });
+    $(".btn-scroll-to-up").click(function(){
+        $("html").animate({scrollTop:0},1000)
+    });
+    $(".lodaingPage").fadeOut(3000);
 })
