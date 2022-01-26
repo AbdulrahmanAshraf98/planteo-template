@@ -130,6 +130,6 @@ $(document).ready(()=>{
     $(".btn-scroll-to-up").click(function(){
         $("html").animate({scrollTop:0},1000)
     });
-    $(".lodaingPage").fadeOut(2000);
+    $(".lodaingPage").fadeOut(3000);
     
 })
