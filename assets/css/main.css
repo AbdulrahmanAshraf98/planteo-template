@@ -418,7 +418,7 @@ header .container>.row .col-lg-6 .img-box::before{
     left: 30%;
     width: 39%;
     height: 85%;
-    background: url("../img/sl_5.png");
+    background: url("../img/sl_5.webp");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 333;
@@ -623,17 +623,17 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
     color: var(--primary-color);
 }
 /* -------About end---------------- */
-/* -------About end---------------- */
+/* -------contact start---------------- */
 .contact{
     padding: 82px 0px 178px 0px;
-    background:url("../img/call-to-action-2.jpg");
+    background:url("../img/call-to-action-2.webp");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 
-/* -------About end---------------- */
+/* -------contact end---------------- */
 /* -------counter-up start---------------- */
 .counter-up{
     margin-top: -8%;    
@@ -1001,7 +1001,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 /* -------team end---------------- */
 /* -------tastimonials start---------------- */
 .tastimonials{
-    background: url("../img/test_2.jpg");
+    background: url("../img/test_2.webp");
     background-size: 125%;
     padding: 6rem 0;
     background-position: bottom;
@@ -1185,7 +1185,7 @@ header .container>.row .col-lg-6 .img-box>.plant-img-3{
 /* -------footer start---------------- */
 footer{
     padding: 4rem 0 0rem;
-    background-image: url("../img/footer-bg.jpg");
+    background-image: url("../img/footer-bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1800,7 +1800,8 @@ footer .footer-bottom p a{
     }
     /* -------footer end---------------- */
 }
-@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+@media only screen and (max-height: 575.98px) and (orientation: 88.7 kB
+) {
     /* -------header start---------------- */
     header {
         padding: 1rem 0;
