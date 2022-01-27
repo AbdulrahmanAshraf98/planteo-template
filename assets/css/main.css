@@ -1757,6 +1757,12 @@ footer .footer-bottom p a{
         margin-top: -25%;
     }
     /* -------counter-up end---------------- */
+    /* -------team start---------------- */
+    .team .team-item{
+        height: 520px;
+        
+    }
+     /* -------team end---------------- */
     /* -------project start---------------- */
     .project{
         background-color: #eee;
