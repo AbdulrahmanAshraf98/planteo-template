@@ -1,9 +1,13 @@
 $(document).ready(()=>{
-   
-    $(".close-icon").click(()=>{
-        $(".navbar-collapse").animate({"right":"-100%"},500);
-        $(".navbar-collapse").removeClass("show");
-    });
+    $(".nav-link").click((event) => {
+			event.preventDefault();
+		});
+		$(".close-icon").click((event) => {
+			event.preventDefault();
+
+			$(".navbar-collapse").animate({ right: "-100%" }, 500);
+			$(".navbar-collapse").removeClass("show");
+		});
     $(".navbar-toggler").click(()=>{
         $(".navbar-collapse").animate({"right":"0%"}, 500);
     })
